@@ -20,6 +20,7 @@ let activeWorkIndex = 0;
 let carouselPointerId = null;
 let carouselDragStartX = 0;
 let carouselDragStartY = 0;
+let carouselPointerCard = null;
 let suppressCarouselClick = false;
 
 const prepareVideoForAutoplay = (video) => {
@@ -133,6 +134,21 @@ const revealProjectDetail = (targetId) => {
   });
 };
 
+const getClosestCarouselCard = (target) =>
+  target instanceof Element ? target.closest("[data-carousel-card]") : null;
+
+const openCarouselCard = (card) => {
+  if (!card || card.classList.contains("is-hidden-slide")) return false;
+
+  const tappedIndex = carouselCards.indexOf(card);
+  if (tappedIndex < 0) return false;
+
+  activeWorkIndex = tappedIndex;
+  updateCarousel();
+  revealProjectDetail(card.dataset.detailTarget);
+  return true;
+};
+
 const openGalleryLightbox = (item) => {
   if (!galleryLightbox || !galleryLightboxImage || !galleryLightboxVideo || !galleryLightboxPlaceholder) {
     return;
@@ -230,8 +246,8 @@ workCarousel?.addEventListener("pointerdown", (event) => {
   carouselPointerId = event.pointerId;
   carouselDragStartX = event.clientX;
   carouselDragStartY = event.clientY;
+  carouselPointerCard = getClosestCarouselCard(event.target);
   workCarousel.classList.add("is-dragging");
-  workCarousel.setPointerCapture?.(event.pointerId);
 });
 
 const finishCarouselDrag = (event) => {
@@ -240,20 +256,30 @@ const finishCarouselDrag = (event) => {
   const deltaX = event.clientX - carouselDragStartX;
   const deltaY = event.clientY - carouselDragStartY;
   const isHorizontalSwipe = Math.abs(deltaX) > 42 && Math.abs(deltaX) > Math.abs(deltaY);
+  const tappedCard = carouselPointerCard;
 
   workCarousel?.classList.remove("is-dragging");
-  workCarousel?.releasePointerCapture?.(event.pointerId);
   carouselPointerId = null;
+  carouselPointerCard = null;
 
-  if (!isHorizontalSwipe) return;
+  if (isHorizontalSwipe) {
+    suppressCarouselClick = true;
+    activeWorkIndex += deltaX < 0 ? 1 : -1;
+    updateCarousel();
+
+    window.setTimeout(() => {
+      suppressCarouselClick = false;
+    }, 160);
+    return;
+  }
+
+  if (!tappedCard) return;
 
   suppressCarouselClick = true;
-  activeWorkIndex += deltaX < 0 ? 1 : -1;
-  updateCarousel();
-
+  openCarouselCard(tappedCard);
   window.setTimeout(() => {
     suppressCarouselClick = false;
-  }, 160);
+  }, 80);
 };
 
 workCarousel?.addEventListener("pointerup", finishCarouselDrag);
@@ -261,22 +287,28 @@ workCarousel?.addEventListener("pointercancel", (event) => {
   if (carouselPointerId !== event.pointerId) return;
   workCarousel.classList.remove("is-dragging");
   carouselPointerId = null;
+  carouselPointerCard = null;
 });
 
-carouselCards.forEach((card, index) => {
-  card.addEventListener("click", () => {
+workCarousel?.addEventListener("click", (event) => {
+  if (suppressCarouselClick) return;
+  const card = getClosestCarouselCard(event.target);
+  if (!card) return;
+  event.preventDefault();
+  openCarouselCard(card);
+});
+
+carouselCards.forEach((card) => {
+  card.addEventListener("click", (event) => {
     if (suppressCarouselClick) return;
-    activeWorkIndex = index;
-    updateCarousel();
-    revealProjectDetail(card.dataset.detailTarget);
+    event.stopPropagation();
+    openCarouselCard(card);
   });
 
   card.addEventListener("keydown", (event) => {
     if (event.key !== "Enter" && event.key !== " ") return;
     event.preventDefault();
-    activeWorkIndex = index;
-    updateCarousel();
-    revealProjectDetail(card.dataset.detailTarget);
+    openCarouselCard(card);
   });
 });
 
