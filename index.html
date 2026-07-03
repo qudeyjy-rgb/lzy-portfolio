@@ -1,0 +1,959 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>雷志英 | 个人视觉作品集</title>
+    <meta
+      name="description"
+      content="雷志英个人视觉作品集，展示获奖作品、标杆作品、品牌全案、视觉规范、动态视觉与电商推广素材。"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="回到首页">
+        <span class="brand-mark" aria-hidden="true">L</span>
+      </a>
+
+      <nav class="nav" aria-label="主导航">
+        <a class="is-active" href="#top">HOME</a>
+        <a href="#works">WORKS</a>
+        <a href="#top">ABOUT</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+
+      <div class="language-switch" aria-label="语言">CN / EN</div>
+    </header>
+
+    <main>
+      <section class="profile-section section-frame" id="top" aria-labelledby="profile-title">
+        <h2 class="sr-only" id="profile-title">ABOUT ME</h2>
+        <img
+          class="about-screen-image"
+          src="assets/portfolio/about-screen.png"
+          alt="个人简介与核心标签页面，展示 ABOUT ME、价值定位、个人标签和核心数据"
+        />
+      </section>
+
+      <section class="works-section section-frame" id="works" aria-labelledby="works-title">
+        <div class="section-number">02</div>
+        <div class="works-heading">
+          <p class="eyebrow">Gallery</p>
+          <h2 id="works-title">SELECTED WORKS</h2>
+          <p>六个分类各精选一张代表作品，左右切换浏览，点击分类可直接跳转。</p>
+        </div>
+
+        <div class="filter-bar" aria-label="作品分类筛选">
+          <button class="filter-button is-active" type="button" data-filter="all">ALL</button>
+          <button class="filter-button" type="button" data-filter="awards">获奖作品</button>
+          <button class="filter-button" type="button" data-filter="benchmark">标杆作品</button>
+          <button class="filter-button" type="button" data-filter="brand">品牌全案</button>
+          <button class="filter-button" type="button" data-filter="guideline">视觉规范</button>
+          <button class="filter-button" type="button" data-filter="motion">动态视觉</button>
+          <button class="filter-button" type="button" data-filter="ecommerce">电商推广素材</button>
+        </div>
+
+        <div class="work-carousel" aria-label="分类作品轮播">
+          <article
+            class="stage-card carousel-card is-active is-wide"
+            data-carousel-card
+            data-category="awards"
+            data-detail-target="drci-award-detail"
+            tabindex="0"
+          >
+            <img src="assets/portfolio/award-drci-labo.jpg" alt="城野医生线上视觉升级获奖作品" />
+            <div class="stage-overlay">
+              <span>获奖作品</span>
+              <h3>米兰设计·金奖&nbsp;&nbsp;DNA设计·银奖</h3>
+              <p>城野医生线上视觉升级</p>
+            </div>
+          </article>
+
+          <article
+            class="stage-card carousel-card is-wide is-dark-bg"
+            data-carousel-card
+            data-category="benchmark"
+            data-detail-target="genomer-benchmark-detail"
+            tabindex="0"
+          >
+            <img src="assets/portfolio/benchmark-genomer.png" alt="GENOMER 品牌视觉全案标杆作品" />
+            <div class="stage-overlay">
+              <span>标杆作品</span>
+              <h3>公司首个标杆品牌视觉全案案例</h3>
+              <p>GENOMER品牌视觉全案</p>
+            </div>
+          </article>
+
+          <article
+            class="stage-card carousel-card is-wide is-dark-bg"
+            data-carousel-card
+            data-category="brand"
+            data-detail-target="lab-nescens-brand-detail"
+            tabindex="0"
+          >
+            <img src="assets/portfolio/brand-case-3lab-nescens.jpg" alt="3LAB nescens 线上视觉体系搭建案例" />
+            <div class="stage-overlay">
+              <span>品牌全案</span>
+              <h3>0-1线上视觉体系搭建案例</h3>
+              <p>3LAB&nbsp;&nbsp;nescens</p>
+            </div>
+          </article>
+
+          <article
+            class="stage-card carousel-card is-wide"
+            data-carousel-card
+            data-category="guideline"
+            data-detail-target="visual-guideline-detail"
+            tabindex="0"
+          >
+            <img src="assets/portfolio/visual-guideline-neutrogena.png" alt="露得清品牌视觉指引手册预览" />
+            <div class="stage-overlay">
+              <span>视觉规范</span>
+              <h3>品牌视觉指引手册</h3>
+              <p>品牌资产规范化覆盖识别元素，线上线下触点规范</p>
+            </div>
+          </article>
+
+          <article
+            class="stage-card carousel-card"
+            data-carousel-card
+            data-category="motion"
+            data-detail-target="motion-visual-detail"
+            tabindex="0"
+          >
+            <img src="assets/portfolio/motion-01.jpg" alt="动态视觉预览" />
+            <div class="stage-overlay">
+              <span>动态视觉</span>
+              <h3>发布会 KV</h3>
+              <p>发布会动态主视觉封面，强调品牌声量、活动节奏和多渠道传播记忆点。</p>
+            </div>
+          </article>
+
+          <article
+            class="stage-card carousel-card"
+            data-carousel-card
+            data-category="ecommerce"
+            data-detail-target="ecommerce-visual-detail"
+            tabindex="0"
+          >
+            <img src="assets/portfolio/ecommerce-01.jpg" alt="电商推广素材视觉预览" />
+            <div class="stage-overlay">
+              <span>电商推广素材</span>
+              <h3>Campaign Main Visual</h3>
+              <p>活动主视觉与产品利益点呈现，兼顾品牌质感、促销信息和平台转化效率。</p>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="stage-controls" aria-label="作品轮播控制">
+          <button type="button" data-work-prev aria-label="上一张作品">←</button>
+          <div class="carousel-progress" aria-hidden="true">
+            <span class="progress-line"><i data-progress-line></i></span>
+            <strong data-carousel-current>1</strong>
+            <span>2 3 4 5 6</span>
+          </div>
+          <button type="button" data-work-next aria-label="下一张作品">→</button>
+        </div>
+
+        <div class="works-grid" aria-label="作品小图网格">
+          <article
+            class="work-card"
+            tabindex="0"
+            data-category="awards"
+            data-category-label="获奖作品"
+            data-title="米兰设计·金奖  DNA设计·银奖"
+            data-description="城野医生线上视觉升级"
+            data-image="assets/portfolio/award-drci-labo.jpg"
+          >
+            <img src="assets/portfolio/award-drci-labo.jpg" alt="城野医生线上视觉升级获奖作品" />
+          </article>
+          <article
+            class="work-card"
+            tabindex="0"
+            data-category="awards"
+            data-category-label="获奖作品"
+            data-title="公司春班奖"
+            data-description="Lab02.0 产品视觉项目，围绕产品定位完成电商页面、传播画面与核心视觉表达。"
+            data-image="assets/portfolio/award-02.jpg"
+          >
+            <img src="assets/portfolio/award-02.jpg" alt="公司春班奖作品" />
+          </article>
+          <article
+            class="work-card"
+            tabindex="0"
+            data-category="awards"
+            data-category-label="获奖作品"
+            data-title="年度最佳项目奖"
+            data-description="以高完成度视觉提案与项目落地能力获得年度最佳项目认可。"
+            data-image="assets/portfolio/award-03.jpg"
+          >
+            <img src="assets/portfolio/award-03.jpg" alt="年度最佳项目奖作品" />
+          </article>
+
+          <article
+            class="work-card"
+            tabindex="0"
+            data-category="benchmark"
+            data-category-label="标杆作品"
+            data-title="公司首个标杆品牌视觉全案案例"
+            data-description="GENOMER品牌视觉全案"
+            data-image="assets/portfolio/benchmark-genomer.png"
+          >
+            <img src="assets/portfolio/benchmark-genomer.png" alt="GENOMER 品牌视觉全案标杆作品" />
+          </article>
+          <article
+            class="work-card"
+            tabindex="0"
+            data-category="benchmark"
+            data-category-label="标杆作品"
+            data-title="Campaign KV"
+            data-description="商业活动主视觉，通过产品陈列、光影质感和空间叙事建立高级视觉记忆点。"
+            data-image="assets/portfolio/benchmark-02.jpg"
+          >
+            <img src="assets/portfolio/benchmark-02.jpg" alt="活动主视觉标杆作品" />
+          </article>
+          <article
+            class="work-card"
+            tabindex="0"
+            data-category="benchmark"
+            data-category-label="标杆作品"
+            data-title="Product Storytelling"
+            data-description="围绕产品卖点完成视觉叙事，将成分、功效和品牌调性转化为可感知画面。"
+            data-image="assets/portfolio/benchmark-03.jpg"
+          >
+            <img src="assets/portfolio/benchmark-03.jpg" alt="产品叙事标杆作品" />
+          </article>
+          <article
+            class="work-card"
+            tabindex="0"
+            data-category="benchmark"
+            data-category-label="标杆作品"
+            data-title="Portrait Layout"
+            data-description="竖版构图与信息层级控制案例，适合移动端传播、社媒视觉和详情页关键画面。"
+            data-image="assets/portfolio/benchmark-04.jpg"
+          >
+            <img src="assets/portfolio/benchmark-04.jpg" alt="竖版标杆作品" />
+          </article>
+
+          <article
+            class="work-card"
+            tabindex="0"
+            data-category="brand"
+            data-category-label="品牌全案"
+            data-title="0-1线上视觉体系搭建案例"
+            data-description="3LAB nescens"
+            data-image="assets/portfolio/brand-case-3lab-nescens.jpg"
+          >
+            <img src="assets/portfolio/brand-case-3lab-nescens.jpg" alt="3LAB nescens 品牌全案" />
+          </article>
+          <article
+            class="work-card"
+            tabindex="0"
+            data-category="brand"
+            data-category-label="品牌全案"
+            data-title="Nescens"
+            data-description="品牌故事、产品详情页与核心视觉资产整合，建立品牌高端护肤叙事体系。"
+            data-image="assets/portfolio/brand-case-nescens.jpg"
+          >
+            <img src="assets/portfolio/brand-case-nescens.jpg" alt="Nescens 品牌全案" />
+          </article>
+          <article
+            class="work-card"
+            tabindex="0"
+            data-category="brand"
+            data-category-label="品牌全案"
+            data-title="Super Cream"
+            data-description="围绕产品概念完成视觉创意、质感表达和电商页面落地，突出高端抗老产品价值。"
+            data-image="assets/portfolio/brand-case-super.jpg"
+          >
+            <img src="assets/portfolio/brand-case-super.jpg" alt="Super Cream 品牌视觉" />
+          </article>
+          <article
+            class="work-card"
+            tabindex="0"
+            data-category="brand"
+            data-category-label="品牌全案"
+            data-title="Time Concept"
+            data-description="以时间为主题的品牌视觉案例，强化情绪氛围、竖版构图和主题视觉识别。"
+            data-image="assets/portfolio/brand-case-time.jpg"
+          >
+            <img src="assets/portfolio/brand-case-time.jpg" alt="时间主题品牌视觉" />
+          </article>
+
+          <article
+            class="work-card"
+            tabindex="0"
+            data-category="guideline"
+            data-category-label="视觉规范"
+            data-title="品牌视觉指引手册"
+            data-description="品牌资产规范化覆盖识别元素，线上线下触点规范。"
+            data-image="assets/portfolio/visual-guideline-neutrogena.png"
+          >
+            <img src="assets/portfolio/visual-guideline-neutrogena.png" alt="露得清品牌视觉指引手册" />
+          </article>
+          <article
+            class="work-card"
+            tabindex="0"
+            data-category="guideline"
+            data-category-label="视觉规范"
+            data-title="版式与网格"
+            data-description="建立统一版式秩序和信息层级，让视觉规范在不同页面与物料中稳定延展。"
+            data-image="assets/portfolio/guideline-02.jpg"
+          >
+            <img src="assets/portfolio/guideline-02.jpg" alt="视觉规范版式与网格" />
+          </article>
+          <article
+            class="work-card"
+            tabindex="0"
+            data-category="guideline"
+            data-category-label="视觉规范"
+            data-title="图形语言"
+            data-description="沉淀品牌专属图形语言与视觉规则，提高团队协作效率和跨渠道一致性。"
+            data-image="assets/portfolio/guideline-03.jpg"
+          >
+            <img src="assets/portfolio/guideline-03.jpg" alt="视觉规范图形语言" />
+          </article>
+          <article
+            class="work-card"
+            tabindex="0"
+            data-category="guideline"
+            data-category-label="视觉规范"
+            data-title="应用场景"
+            data-description="展示视觉规范在电商、社媒、终端物料和推广场景中的系统化落地。"
+            data-image="assets/portfolio/guideline-04.jpg"
+          >
+            <img src="assets/portfolio/guideline-04.jpg" alt="视觉规范应用场景" />
+          </article>
+
+          <article
+            class="work-card"
+            tabindex="0"
+            data-category="motion"
+            data-category-label="动态视觉"
+            data-title="发布会 KV"
+            data-description="发布会动态主视觉封面，强调品牌声量、活动节奏和多渠道传播记忆点。"
+            data-image="assets/portfolio/motion-01.jpg"
+          >
+            <img src="assets/portfolio/motion-01.jpg" alt="发布会动态视觉" />
+          </article>
+          <article
+            class="work-card"
+            tabindex="0"
+            data-category="motion"
+            data-category-label="动态视觉"
+            data-title="TVC / Short Film"
+            data-description="短片与产品动态视觉，将产品卖点、情绪氛围和品牌语言转化为动态内容。"
+            data-image="assets/portfolio/motion-02.jpg"
+          >
+            <img src="assets/portfolio/motion-02.jpg" alt="TVC 动态视觉" />
+          </article>
+          <article
+            class="work-card"
+            tabindex="0"
+            data-category="motion"
+            data-category-label="动态视觉"
+            data-title="Motion Campaign"
+            data-description="动态营销素材封面，适配品牌活动、短视频传播和线上渠道推广。"
+            data-image="assets/portfolio/motion-03.jpg"
+          >
+            <img src="assets/portfolio/motion-03.jpg" alt="动态营销视觉" />
+          </article>
+
+          <article
+            class="work-card"
+            tabindex="0"
+            data-category="ecommerce"
+            data-category-label="电商推广素材"
+            data-title="Campaign Main Visual"
+            data-description="活动主视觉与产品利益点呈现，兼顾品牌质感、促销信息和平台转化效率。"
+            data-image="assets/portfolio/ecommerce-01.jpg"
+          >
+            <img src="assets/portfolio/ecommerce-01.jpg" alt="电商活动主视觉" />
+          </article>
+          <article
+            class="work-card"
+            tabindex="0"
+            data-category="ecommerce"
+            data-category-label="电商推广素材"
+            data-title="Product Detail"
+            data-description="详情页核心模块设计，平衡信息密度、视觉节奏和产品卖点表达。"
+            data-image="assets/portfolio/ecommerce-02.jpg"
+          >
+            <img src="assets/portfolio/ecommerce-02.jpg" alt="电商详情页视觉" />
+          </article>
+          <article
+            class="work-card"
+            tabindex="0"
+            data-category="ecommerce"
+            data-category-label="电商推广素材"
+            data-title="Social Banner"
+            data-description="社媒与平台横幅素材，突出活动主题、产品氛围和快速识别的传播元素。"
+            data-image="assets/portfolio/ecommerce-03.jpg"
+          >
+            <img src="assets/portfolio/ecommerce-03.jpg" alt="社媒横幅素材" />
+          </article>
+          <article
+            class="work-card"
+            tabindex="0"
+            data-category="ecommerce"
+            data-category-label="电商推广素材"
+            data-title="Sales Campaign"
+            data-description="大促场景视觉设计，通过强节奏构图与信息层级提升页面停留和转化。"
+            data-image="assets/portfolio/ecommerce-04.jpg"
+          >
+            <img src="assets/portfolio/ecommerce-04.jpg" alt="电商大促视觉" />
+          </article>
+          <article
+            class="work-card"
+            tabindex="0"
+            data-category="ecommerce"
+            data-category-label="电商推广素材"
+            data-title="Product Poster"
+            data-description="产品海报视觉，结合质感光影、利益点文案和平台适配完成快速传播。"
+            data-image="assets/portfolio/ecommerce-05.jpg"
+          >
+            <img src="assets/portfolio/ecommerce-05.jpg" alt="产品推广海报" />
+          </article>
+          <article
+            class="work-card"
+            tabindex="0"
+            data-category="ecommerce"
+            data-category-label="电商推广素材"
+            data-title="Launch Material"
+            data-description="新品上市素材，覆盖主视觉、卖点模块和多端尺寸延展。"
+            data-image="assets/portfolio/ecommerce-06.jpg"
+          >
+            <img src="assets/portfolio/ecommerce-06.jpg" alt="新品上市推广素材" />
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="project-detail-section section-frame is-hidden"
+        id="drci-award-detail"
+        aria-labelledby="drci-award-title"
+        data-project-detail
+        hidden
+      >
+        <div class="section-number">03</div>
+        <div class="project-detail-heading detail-heading-centered">
+          <p class="eyebrow">Awarded Case</p>
+          <h2 id="drci-award-title">DR.CI:LABO VISUAL UPGRADE</h2>
+          <p>
+            米兰设计·金奖 / DNA设计·银奖。以城野医生线上视觉升级为核心，延展品牌识别、主视觉、动态影像与线下空间应用。
+          </p>
+        </div>
+
+        <div class="project-hero-media">
+          <video
+            src="assets/portfolio/drci-award/brand-film.mp4"
+            poster="assets/portfolio/drci-award/main-visual.jpg"
+            controls
+            muted
+            loop
+            playsinline
+            preload="metadata"
+          ></video>
+        </div>
+
+        <div class="project-gallery" aria-label="城野医生线上视觉升级动态图集">
+          <div class="project-gallery-meta">
+            <span>PROJECT VISUALS</span>
+            <span>08 IMAGES</span>
+          </div>
+
+          <div class="project-gallery-viewport">
+            <div class="project-gallery-board" data-project-gallery>
+              <figure class="project-gallery-item" tabindex="0">
+                <img src="assets/portfolio/drci-award/concept-overview.png" alt="城野医生项目概念总览" />
+              </figure>
+              <figure class="project-gallery-item" tabindex="0">
+                <img src="assets/portfolio/drci-award/design-system.png" alt="城野医生设计理念与品牌系统" />
+              </figure>
+              <figure class="project-gallery-item" tabindex="0">
+                <img src="assets/portfolio/drci-award/japanese-blankness.png" alt="Japanese Blankness 页面视觉" />
+              </figure>
+              <figure class="project-gallery-item" tabindex="0">
+                <img src="assets/portfolio/drci-award/science-elements.png" alt="Science-Related Elements 页面视觉" />
+              </figure>
+              <figure class="project-gallery-item" tabindex="0">
+                <img src="assets/portfolio/drci-award/product-feature.png" alt="Product Feature Visualization 页面视觉" />
+              </figure>
+              <figure class="project-gallery-item" tabindex="0">
+                <img src="assets/portfolio/drci-award/offline-design.png" alt="Offline Design 页面视觉" />
+              </figure>
+              <figure class="project-gallery-item" tabindex="0">
+                <img src="assets/portfolio/drci-award/store-presentation.png" alt="Offline Store Presentation 页面视觉" />
+              </figure>
+              <figure class="project-gallery-item" tabindex="0">
+                <img src="assets/portfolio/drci-award/store-interior.jpg" alt="城野医生门店空间视觉" />
+              </figure>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section
+        class="project-detail-section section-frame is-hidden"
+        id="genomer-benchmark-detail"
+        aria-labelledby="genomer-benchmark-title"
+        data-project-detail
+        hidden
+      >
+        <div class="section-number">03</div>
+        <div class="project-detail-heading genomer-detail-heading">
+          <div class="genomer-title-copy">
+            <p class="eyebrow">Benchmark Case</p>
+            <h2 id="genomer-benchmark-title">GENOMER BRAND VISUAL SYSTEM</h2>
+            <p>
+              探索GENOMER基因奥秘の华章，沉浸式打造品牌以线上为主的视觉全案，全案内容包含品牌元素挖掘，线上触点静态及动态视觉体系搭建
+            </p>
+          </div>
+        </div>
+
+        <div class="project-hero-media">
+          <video
+          src="assets/portfolio/genomer-benchmark/hero.mp4"
+            poster="assets/portfolio/benchmark-genomer.png"
+            controls
+            muted
+            loop
+            playsinline
+            preload="metadata"
+          ></video>
+        </div>
+
+        <div class="project-gallery project-gallery--genomer" aria-label="GENOMER 品牌视觉全案项目素材">
+          <div class="project-gallery-meta">
+            <span>PROJECT MEDIA</span>
+            <span>02 VIDEOS / 06 IMAGES</span>
+          </div>
+
+          <div class="project-gallery-viewport">
+            <div class="project-media-board">
+              <figure class="project-gallery-item project-media-card is-video" tabindex="0">
+                <video
+                  src="assets/portfolio/genomer-benchmark/video-01.mp4"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                ></video>
+              </figure>
+              <figure class="project-gallery-item project-media-card is-video" tabindex="0">
+                <video
+                  src="assets/portfolio/genomer-benchmark/video-02.mp4"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                ></video>
+              </figure>
+              <figure class="project-gallery-item project-media-card" tabindex="0">
+                <img src="assets/portfolio/genomer-benchmark/image-01.png" alt="GENOMER 金色标识视觉" />
+              </figure>
+              <figure class="project-gallery-item project-media-card" tabindex="0">
+                <img src="assets/portfolio/genomer-benchmark/image-02.png" alt="GENOMER 产品主视觉" />
+              </figure>
+              <figure class="project-gallery-item project-media-card" tabindex="0">
+                <img src="assets/portfolio/genomer-benchmark/image-03.png" alt="GENOMER 视觉语言体系" />
+              </figure>
+              <figure class="project-gallery-item project-media-card" tabindex="0">
+                <img src="assets/portfolio/genomer-benchmark/image-04.png" alt="GENOMER 动态化视觉应用" />
+              </figure>
+              <figure class="project-gallery-item project-media-card" tabindex="0">
+                <img src="assets/portfolio/genomer-benchmark/image-05.png" alt="GENOMER 品牌页面视觉" />
+              </figure>
+              <figure class="project-gallery-item project-media-card" tabindex="0">
+                <img src="assets/portfolio/genomer-benchmark/image-06.png" alt="GENOMER 视觉系统规范" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="project-detail-section section-frame is-hidden"
+        id="lab-nescens-brand-detail"
+        aria-labelledby="lab-nescens-title"
+        data-project-detail
+        hidden
+      >
+        <div class="section-number">03</div>
+        <div class="project-detail-heading detail-heading-centered">
+          <p class="eyebrow">Brand Case</p>
+          <h2 id="lab-nescens-title">3LAB NESCENS VISUAL SYSTEM</h2>
+          <p>0-1线上视觉体系搭建案例</p>
+        </div>
+
+        <div class="project-hero-media">
+          <video
+          src="assets/portfolio/3lab-nescens/hero.mp4"
+            poster="assets/portfolio/brand-case-3lab-nescens.jpg"
+            controls
+            muted
+            loop
+            playsinline
+            preload="metadata"
+          ></video>
+        </div>
+
+        <div class="project-gallery project-gallery--dark" aria-label="3LAB nescens 品牌全案项目素材">
+          <div class="project-gallery-meta">
+            <span>PROJECT MEDIA</span>
+            <span>02 VIDEOS / 06 IMAGES</span>
+          </div>
+
+          <div class="project-gallery-viewport">
+            <div class="project-media-board">
+              <figure class="project-gallery-item project-media-card is-video" tabindex="0">
+                <video
+                  src="assets/portfolio/3lab-nescens/video-01.mp4"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                ></video>
+              </figure>
+              <figure class="project-gallery-item project-media-card is-video" tabindex="0">
+                <video
+                  src="assets/portfolio/3lab-nescens/video-02.mp4"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                ></video>
+              </figure>
+              <figure class="project-gallery-item project-media-card" tabindex="0">
+                <img src="assets/portfolio/3lab-nescens/image-01.jpg" alt="3LAB 首页视觉体系展示" />
+              </figure>
+              <figure class="project-gallery-item project-media-card" tabindex="0">
+                <img src="assets/portfolio/3lab-nescens/image-02.jpg" alt="3LAB WW Cream 详情页视觉展示" />
+              </figure>
+              <figure class="project-gallery-item project-media-card" tabindex="0">
+                <img src="assets/portfolio/3lab-nescens/image-03.jpg" alt="3LAB WW Day SPF 40 视觉展示" />
+              </figure>
+              <figure class="project-gallery-item project-media-card" tabindex="0">
+                <img src="assets/portfolio/3lab-nescens/image-04.jpg" alt="3LAB Super Cream 视觉展示" />
+              </figure>
+              <figure class="project-gallery-item project-media-card" tabindex="0">
+                <img src="assets/portfolio/3lab-nescens/image-05.jpg" alt="3LAB M Cream 视觉展示" />
+              </figure>
+              <figure class="project-gallery-item project-media-card" tabindex="0">
+                <img src="assets/portfolio/3lab-nescens/image-06.jpg" alt="3LAB Anti Aging Oil 视觉展示" />
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-fullscreen-slot project-gallery-item project-media-card is-video" tabindex="0">
+          <video
+            src="assets/portfolio/3lab-nescens/fullscreen-video.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+          ></video>
+        </div>
+
+        <div class="project-gallery project-gallery--dark project-gallery--reserved" aria-label="3LAB nescens 线上视觉素材预留">
+          <div class="project-gallery-meta">
+            <span>ONLINE VISUAL</span>
+            <span>02 VIDEOS / 06 IMAGES</span>
+          </div>
+
+          <div class="project-gallery-viewport">
+            <div class="project-media-board">
+              <figure class="project-gallery-item project-media-card is-video" tabindex="0">
+                <video
+                  src="assets/portfolio/3lab-nescens/online-video-01.mp4"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                ></video>
+              </figure>
+              <figure class="project-gallery-item project-media-card is-video" tabindex="0">
+                <video
+                  src="assets/portfolio/3lab-nescens/online-video-02.mp4"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                ></video>
+              </figure>
+              <figure class="project-gallery-item project-media-card" tabindex="0">
+                <img src="assets/portfolio/3lab-nescens/online-image-01.jpg" alt="nescens 线上视觉区域图片 01" />
+              </figure>
+              <figure class="project-gallery-item project-media-card" tabindex="0">
+                <img src="assets/portfolio/3lab-nescens/online-image-02.jpg" alt="nescens 线上视觉区域图片 02" />
+              </figure>
+              <figure class="project-gallery-item project-media-card" tabindex="0">
+                <img src="assets/portfolio/3lab-nescens/online-image-03.jpg" alt="nescens 线上视觉区域图片 03" />
+              </figure>
+              <figure class="project-gallery-item project-media-card" tabindex="0">
+                <img src="assets/portfolio/3lab-nescens/online-image-04.jpg" alt="nescens 线上视觉区域图片 04" />
+              </figure>
+              <figure class="project-gallery-item project-media-card" tabindex="0">
+                <img src="assets/portfolio/3lab-nescens/online-image-05.jpg" alt="nescens 线上视觉区域图片 05" />
+              </figure>
+              <figure class="project-gallery-item project-media-card" tabindex="0">
+                <img src="assets/portfolio/3lab-nescens/online-image-06.jpg" alt="nescens 线上视觉区域图片 06" />
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-gallery project-gallery--dark project-gallery--reserved" aria-label="3LAB nescens 线下视觉素材预留">
+          <div class="project-gallery-meta">
+            <span>OFFLINE VISUAL</span>
+            <span>05 MOTION VIDEOS</span>
+          </div>
+
+          <div class="offline-video-layout">
+            <figure class="project-gallery-item project-media-card is-video offline-main-video" tabindex="0">
+              <video
+                src="assets/portfolio/3lab-nescens/offline-main.mp4"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+              ></video>
+            </figure>
+
+            <div class="offline-video-grid">
+              <figure class="project-gallery-item project-media-card is-video" tabindex="0">
+                <video
+                  src="assets/portfolio/3lab-nescens/offline-video-01.mp4"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                ></video>
+              </figure>
+              <figure class="project-gallery-item project-media-card is-video" tabindex="0">
+                <video
+                  src="assets/portfolio/3lab-nescens/offline-video-02.mp4"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                ></video>
+              </figure>
+              <figure class="project-gallery-item project-media-card is-video" tabindex="0">
+                <video
+                  src="assets/portfolio/3lab-nescens/offline-video-03.mp4"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                ></video>
+              </figure>
+              <figure class="project-gallery-item project-media-card is-video" tabindex="0">
+                <video
+                  src="assets/portfolio/3lab-nescens/offline-video-04.mp4"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                ></video>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="project-detail-section section-frame is-hidden"
+        id="visual-guideline-detail"
+        aria-labelledby="visual-guideline-title"
+        data-project-detail
+        hidden
+      >
+        <div class="section-number">03</div>
+        <div class="project-detail-heading detail-heading-centered">
+          <p class="eyebrow">Visual Guideline</p>
+          <h2 id="visual-guideline-title">品牌视觉指引手册</h2>
+          <p>品牌资产规范化覆盖识别元素，线上线下触点规范。</p>
+        </div>
+
+        <div class="project-gallery" aria-label="露得清视觉规范项目素材">
+          <div class="project-gallery-meta">
+            <span>PROJECT MEDIA</span>
+            <span>02 VIDEOS / 03 IMAGES</span>
+          </div>
+
+          <div class="project-gallery-viewport">
+            <div class="project-media-board">
+              <figure class="project-gallery-item project-media-card is-video" tabindex="0">
+                <video
+                  src="assets/portfolio/visual-guideline/video-01.mp4"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                ></video>
+              </figure>
+              <figure class="project-gallery-item project-media-card is-video" tabindex="0">
+                <video
+                  src="assets/portfolio/visual-guideline/video-02.mp4"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                ></video>
+              </figure>
+              <figure class="project-gallery-item project-media-card" tabindex="0">
+                <img src="assets/portfolio/visual-guideline/image-01.png" alt="露得清视觉规范页面 01" />
+              </figure>
+              <figure class="project-gallery-item project-media-card" tabindex="0">
+                <img src="assets/portfolio/visual-guideline/image-02.png" alt="露得清视觉规范页面 02" />
+              </figure>
+              <figure class="project-gallery-item project-media-card" tabindex="0">
+                <img src="assets/portfolio/visual-guideline/image-03.png" alt="露得清视觉规范页面 03" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="project-detail-section section-frame is-hidden"
+        id="motion-visual-detail"
+        aria-labelledby="motion-visual-title"
+        data-project-detail
+        hidden
+      >
+        <div class="section-number">03</div>
+        <div class="project-detail-heading detail-heading-centered">
+          <p class="eyebrow">Motion Visual</p>
+          <h2 id="motion-visual-title">动态视觉</h2>
+          <p>发布会动态主视觉封面，强调品牌声量、活动节奏和多渠道传播记忆点。</p>
+        </div>
+
+        <figure class="project-guideline-hero project-gallery-item" tabindex="0">
+          <img src="assets/portfolio/motion-01.jpg" alt="动态视觉主画面" />
+        </figure>
+
+        <div class="project-gallery project-gallery--dark" aria-label="动态视觉项目素材">
+          <div class="project-gallery-meta">
+            <span>PROJECT VISUALS</span>
+            <span>03 IMAGES</span>
+          </div>
+
+          <div class="project-gallery-viewport">
+            <div class="project-gallery-board" data-project-gallery>
+              <figure class="project-gallery-item" tabindex="0">
+                <img src="assets/portfolio/motion-01.jpg" alt="动态视觉封面 01" />
+              </figure>
+              <figure class="project-gallery-item" tabindex="0">
+                <img src="assets/portfolio/motion-02.jpg" alt="动态视觉封面 02" />
+              </figure>
+              <figure class="project-gallery-item" tabindex="0">
+                <img src="assets/portfolio/motion-03.jpg" alt="动态视觉封面 03" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="project-detail-section section-frame is-hidden"
+        id="ecommerce-visual-detail"
+        aria-labelledby="ecommerce-visual-title"
+        data-project-detail
+        hidden
+      >
+        <div class="section-number">03</div>
+        <div class="project-detail-heading detail-heading-centered">
+          <p class="eyebrow">E-commerce Visual</p>
+          <h2 id="ecommerce-visual-title">电商推广素材</h2>
+          <p>活动主视觉与产品利益点呈现，兼顾品牌质感、促销信息和平台转化效率。</p>
+        </div>
+
+        <figure class="project-guideline-hero project-gallery-item" tabindex="0">
+          <img src="assets/portfolio/ecommerce-01.jpg" alt="电商推广素材主画面" />
+        </figure>
+
+        <div class="project-gallery" aria-label="电商推广素材项目图集">
+          <div class="project-gallery-meta">
+            <span>PROJECT VISUALS</span>
+            <span>06 IMAGES</span>
+          </div>
+
+          <div class="project-gallery-viewport">
+            <div class="project-gallery-board" data-project-gallery>
+              <figure class="project-gallery-item" tabindex="0">
+                <img src="assets/portfolio/ecommerce-01.jpg" alt="电商活动主视觉" />
+              </figure>
+              <figure class="project-gallery-item" tabindex="0">
+                <img src="assets/portfolio/ecommerce-02.jpg" alt="电商详情页视觉" />
+              </figure>
+              <figure class="project-gallery-item" tabindex="0">
+                <img src="assets/portfolio/ecommerce-03.jpg" alt="社媒横幅素材" />
+              </figure>
+              <figure class="project-gallery-item" tabindex="0">
+                <img src="assets/portfolio/ecommerce-04.jpg" alt="电商大促视觉" />
+              </figure>
+              <figure class="project-gallery-item" tabindex="0">
+                <img src="assets/portfolio/ecommerce-05.jpg" alt="产品推广海报" />
+              </figure>
+              <figure class="project-gallery-item" tabindex="0">
+                <img src="assets/portfolio/ecommerce-06.jpg" alt="新品上市推广素材" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="gallery-lightbox" data-gallery-lightbox hidden aria-hidden="true">
+        <button class="gallery-lightbox-close" type="button" data-gallery-lightbox-close aria-label="关闭大图">
+          ×
+        </button>
+        <img data-gallery-lightbox-image src="" alt="" hidden />
+        <video data-gallery-lightbox-video src="" controls playsinline hidden></video>
+        <div class="gallery-lightbox-placeholder" data-gallery-lightbox-placeholder hidden>IMAGE SLOT</div>
+      </div>
+
+      <section class="contact-section section-frame" id="contact" aria-labelledby="contact-title">
+        <div class="section-number">04</div>
+        <div class="contact-copy">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">LET'S CONNECT</h2>
+          <p>可进一步沟通品牌视觉升级、电商视觉策略、年度视觉规划、动态视觉与项目落地合作。</p>
+
+          <div class="contact-list">
+            <a href="mailto:qudeyiy@126.com">qudeyiy@126.com</a>
+            <a href="tel:15574308935">+86 155 7430 8935</a>
+            <span>Changsha, China</span>
+          </div>
+        </div>
+
+        <a class="resume-button" href="assets/portfolio/profile-resume.jpg" download>DOWNLOAD RESUME →</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© 2026 Lei Zhiying. All Rights Reserved.</span>
+      <button class="text-button" type="button" data-scroll-top>BACK TO TOP ↑</button>
+    </footer>
+  </body>
+</html>
